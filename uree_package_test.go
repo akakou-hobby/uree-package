@@ -19,6 +19,10 @@ func (myPackage MyPackage) Run(req Request) Response {
 	return resp
 }
 
+func (myPackage MyPackage) SetUpOptional() string {
+	return ""
+}
+
 func TestExampleSuccess(t *testing.T) {
 	req := Request{
 		"path",

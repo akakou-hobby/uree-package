@@ -12,4 +12,5 @@ type Response struct {
 
 type UreePackage interface {
 	Run(Request) Response
+	SetUpOptional() string
 }
