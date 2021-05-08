@@ -1,13 +1,13 @@
 package uree_package
 
 type Request struct {
-	path     string
-	body     string
-	optional string
+	Path     string
+	Body     string
+	Optional string
 }
 
 type Response struct {
-	body string
+	Body string
 }
 
 type UreePackage interface {

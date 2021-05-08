@@ -8,12 +8,12 @@ import (
 type MyPackage struct{}
 
 func (myPackage MyPackage) Run(req Request) Response {
-	fmt.Println(req.path)
-	fmt.Println(req.body)
-	fmt.Println(req.optional)
+	fmt.Println(req.Path)
+	fmt.Println(req.Body)
+	fmt.Println(req.Optional)
 
 	resp := Response{
-		req.body,
+		req.Body,
 	}
 
 	return resp
