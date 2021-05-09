@@ -22,7 +22,7 @@ type UreeBodyPackage interface {
 	GetName() string
 }
 
-type UreeLeftPackage interface {
+type UreeSidePalletPackage interface {
 	Run(Request) Response
 	SetUpOptional() string
 	GetName() string
