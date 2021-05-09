@@ -10,7 +10,21 @@ type Response struct {
 	Body string
 }
 
-type UreePackage interface {
+type UreeNavberPackage interface {
 	Run(Request) Response
 	SetUpOptional() string
+	GetName() string
+}
+
+type UreeBodyPackage interface {
+	Run(Request) Response
+	SetUpOptional() string
+	GetName() string
+}
+
+type UreeLeftPackage interface {
+	Run(Request) Response
+	SetUpOptional() string
+	GetName() string
+	GetIconPath() string
 }
